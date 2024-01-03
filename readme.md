@@ -1,6 +1,6 @@
 ## `elm-lenses`
 
-Lenses are an abstractions used in functional programming to compose getters and setters.
+Lenses are abstractions used in functional programming to compose getters and setters.
 
 #### Example
 ```elm
@@ -50,3 +50,5 @@ suite =
       |> Lens.update nestedObjectLens (\x -> x + 1)
       |> Expect.equal (Boxed { a = { b = 101 }})
 ```
+
+Go check the [implementation](https://github.com/ascandone/elm-lens/blob/main/src/Lens.elm)! It's quite simple
